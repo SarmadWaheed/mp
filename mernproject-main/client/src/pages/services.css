@@ -1,0 +1,59 @@
+/* Services.css */
+
+/* Styles for the Services component container */
+.card-image {
+  /* Add any specific styles for your card image here */
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 20px; /* Add border radius for rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+  /* Add any other styles such as margin, padding, etc. */
+}
+.services-container {
+    text-align: center;
+  }
+  
+  /* Styles for the title */
+  .services-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for the card container */
+  .services-container .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  /* Styles for the card */
+  .services-container .card {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Styles for the card image */
+  .services-container .card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for the card title */
+  .services-container .card h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for other card information */
+  .services-container .card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  

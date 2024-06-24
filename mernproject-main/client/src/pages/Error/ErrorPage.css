@@ -1,0 +1,64 @@
+/* ErrorPage.css */
+
+#error-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+  
+  .content {
+    max-width: 600px;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .header {
+    font-size: 96px;
+    margin: 0;
+    color: #ff6b6b;
+  }
+  
+  h4 {
+    font-size: 24px;
+    color: #ca0baa;
+    margin: 10px 0;
+  }
+  
+  img {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px 0;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  

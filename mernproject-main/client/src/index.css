@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100.5%;
+}
+
+/* Home.css */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: rgba(31, 23, 2, 0.445);
+  color:  black;
+  padding: 5px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.featured-products,
+.special-offers {
+  flex: 1;
+}
+
+.footer {
+  margin-top: 20px;
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(156, 21, 100);
+  color: rgb(185, 51, 174);
+}
+
+.MDBCard .MDBCardImage {
+  max-height: 200px;
+  object-fit: cover;
+  border: 5px solid rgb(133, 25, 25);
+}
+
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Global styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px ;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-two-cols {
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Section Contact Styles */
+.section-contact, .section-registration {
+  background-color: white;
+  padding: 40px 0;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 0.2rem var(--btn-color);
+  margin-left: 3.2rem;
+}
+
+.contact-image img, .reg-image img {
+  margin: 0%;
+  width: 100%;
+  height: auto;
+}
+
+.contact-form, .reg-form {
+  padding: 20px;
+  border-radius: 1px;
+}
+
+.main-heading {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.contact-form form, .reg-form form {
+  display: grid;
+  gap: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(9, 52, 133);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn-btn-submit {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-btn-submit:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries for Responsive Design */
+
+@media only screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  .main-content {
+    margin-top: 10px;
+  }
+
+  .featured-products .grid-two-cols {
+    grid-template-columns: 1fr; /* Adjust to one column on smaller screens */
+  }
+
+  .contact-form, .reg-form {
+    padding: 10px;
+  }
+}
+
+/* Add your global styles here */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Responsive grid container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding:  10px;
+}
+
+/* Two-column grid for desktop */
+.grid-two-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Hero section styling */
+.section-hero {
+  padding: 50px 0;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  margin-bottom: 15px;
+}
+
+/* Hero image styling */
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Button styling */
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.btn.secondary-btn {
+  background-color: #3498db;
+  color: rgb(255, 255, 255);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .grid-two-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .btn-group {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+}
+
+/* MyTableComponent.css */
+
+/* Style for table headers */
+th {
+  background-color: #3498db; /* Header background color */
+  border: 1px solid #ddd; 
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center; /* Center the text in the header */
+}
+
+/* Style for table cells */
+td {
+  border: 1px solid #ddd; /* Border color between cells */
+  padding: 8px;
+  text-align: center; /* Center the text in the cells */
+}
+
+/* Alternate row background color for better readability */
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light gray background for even rows */
+}
+
+/* Hover effect on rows */
+tr:hover {
+  background-color: #e0e0e0; /* Lighter background color on hover */
+}
+
+/* Add a subtle box shadow for a lifted effect */
+table {
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 767px) {
+  th, td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center; /* Center text for small screens */
+  }
+
+  .button-container {
+    display: block;
+    text-align: center;
+  }
+
+  .button-link {
+    display: inline-block;
+    margin: 10px auto; /* Center the button horizontally with some margin */
+  }
+}
+
+/* Style for the delete button */
+.delete-button {
+  background-color: #9b3a3a;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  display: inline-block; /* Make the button inline-block */
+}
+
+.delete-button:hover {
+  background-color: #f70202;
+}
+
+/* Style for the edit button */
+.button-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+  background-color: #0056b3;
+}
+
+.responsive-img {
+  max-width: 100%;
+  
+}
+
+
+
+
